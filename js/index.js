@@ -14,9 +14,9 @@ window.onload=function(){
 		imgBox.width(banerLeft.width()*len);
 
 		
-		var leftBtn=$(".leftBtn");
-		var rightBtn=$(".rightBtn");
-		var s=0;
+		// var leftBtn=$(".leftBtn");
+		// var rightBtn=$(".rightBtn");
+		// var s=0;
 		// alert(rightBtn.length)
 		// function move(type){
 		// 	if(type=="r"){
