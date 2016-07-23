@@ -18,37 +18,37 @@ window.onload=function(){
 		var rightBtn=$(".rightBtn");
 		var s=0;
 		// alert(rightBtn.length)
-		function move(type){
-			if(type=="r"){
-				s++;
-				if(s==len){
-					s=0;
-				}
+		// function move(type){
+		// 	if(type=="r"){
+		// 		s++;
+		// 		if(s==len){
+		// 			s=0;
+		// 		}
 				
-			}else if(type=="l"){
-				s--;
-				if(s<0){
-					s=len-1;
-				}
-			}
-			imgBox.animate({left:-s*asW},500);
+		// 	}else if(type=="l"){
+		// 		s--;
+		// 		if(s<0){
+		// 			s=len-1;
+		// 		}
+		// 	}
+		// 	imgBox.animate({left:-s*asW},500);
 			
-		}
-		var t=setInterval(function(){move("r")},1000);
-		leftBtn.click(function(){
-			move('r');
-		})
-		banerLeft.hover(function(){
-			clearInterval(t);
-		},function(){
-			t=setInterval(function(){move("r")},1000);
-		})
-		rightBtn.click(function(){
-			move("r");
-		})
-		leftBtn.click(function(){
-			move("l");
-		})
+		// }
+		// var t=setInterval(function(){move("r")},1000);
+		// leftBtn.click(function(){
+		// 	move('r');
+		// })
+		// banerLeft.hover(function(){
+		// 	clearInterval(t);
+		// },function(){
+		// 	t=setInterval(function(){move("r")},1000);
+		// })
+		// rightBtn.click(function(){
+		// 	move("r");
+		// })
+		// leftBtn.click(function(){
+		// 	move("l");
+		// })
 	}
 	window.onresize();
 	$(".backTop").click(function(){
